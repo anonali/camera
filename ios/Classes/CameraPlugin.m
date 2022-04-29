@@ -101,7 +101,7 @@
   if ([@"availableCameras" isEqualToString:call.method]) {
     if (@available(iOS 10.0, *)) {
       AVCaptureDeviceDiscoverySession *discoverySession = [AVCaptureDeviceDiscoverySession
-          discoverySessionWithDeviceTypes:@[ AVCaptureDeviceTypeBuiltInUltraWideAngleCamera ]
+          discoverySessionWithDeviceTypes:@[ AVCaptureDeviceTypeBuiltInUltraWideCamera ]
                                 mediaType:AVMediaTypeVideo
                                  position:AVCaptureDevicePositionUnspecified];
       NSArray<AVCaptureDevice *> *devices = discoverySession.devices;
